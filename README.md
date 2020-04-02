@@ -1,6 +1,6 @@
-There should be always a local graphs of famous/important events in the world or your country!
+There should be always a graphs of famous/important events in the world or your country in your local network/home/garage!
 
-[logo]:https://raw.githubusercontent.com/e1z0/corona-rrdtool/master/img/metrics-daily.png  "Graph"
+![Graph][logo]
 
 ## Install deps: 
 ``
@@ -34,3 +34,6 @@ Check if it works
 */5 * * * * root <path>/corona.py --update
 */10 * * * * root <path>/corona.py --graph
 ```
+
+
+[logo]: https://raw.githubusercontent.com/e1z0/corona-rrdtool/master/img/metrics-daily.png
