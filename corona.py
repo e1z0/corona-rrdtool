@@ -29,7 +29,7 @@ def ReadApiData():
        new_data = resp.json()
        if (last_data['cases'] != new_data['cases']):
          cases = (new_data['cases']-last_data['cases'])
-         TelegramNotification("Turim nauju corona atveju: "+str(cases)+" siandien uzsikretimu atveju lietuvoje: "+str(new_data['todayCases']))
+         TelegramNotification("We have new corona cases: "+str(cases)+" today total cases in our country: "+str(new_data['todayCases']))
    else:
        print("There is no data about corona in redis backend, setting one. :)")
    r.set("last_corona",resp.content)

@@ -2,6 +2,8 @@ There should be always a graphs of famous/important events in the world or your 
 
 ![Graph][logo]
 
+Description: This script can run in almost any device that supports Python2 and has redis installed (it can work without redis too, if the telegram reporting is turned off). It runs in the background every 5 minutes via cron daemon and checks for new corona virus cases in the famous api (https://corona.lmao.ninja/countries/), collects information to the local rrdtool based databased, it draws nice rrdtool based graphical statistics in few images (metrics-daily.png  metrics-monthly.png  metrics-weekly.png) so you can implement in any html or program later. If you have some feature requests or just want to inform me about anything please write in the issues tab. Be safe, be smart, stay at home, and learn Unix! Visit us at http://www.unix-master.com/
+
 ## Install deps: 
 ``
 apt install python-rrdtool python-redis python-json python-requests
